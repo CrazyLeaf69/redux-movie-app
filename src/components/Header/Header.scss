@@ -1,0 +1,59 @@
+@import "../../common/colors.scss";
+
+.header {
+  background-color: $secondary-color;
+  height: 72px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $font-primary;
+  font-size: 20px;
+  font-weight: 600;
+}
+.right-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .search-container {
+    border: solid 2px $font-secondary;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  button {
+    all: unset;
+    color: $font-secondary;
+    margin-left: 10px;
+    transition: all 0.2s;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  input {
+    all: unset;
+    padding-left: 10px;
+    margin-right: 20px;
+    background-color: $secondary-color;
+    color: $font-primary;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+.user-image,
+.user-image img {
+  width: 38px;
+  height: 38px;
+}
